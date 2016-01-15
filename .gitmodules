@@ -1,0 +1,3 @@
+[submodule "site-cookbooks/jboss-eap"]
+	path = site-cookbooks/jboss-eap
+	url = https://github.com/vadikgo/chef-jboss-eap.git
