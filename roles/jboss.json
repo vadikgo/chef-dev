@@ -1,0 +1,24 @@
+{
+  "name": "jboss",
+  "description": "JBoss 6 EAP install",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "jboss-eap": {
+      "install_path": "/u01/opt",
+      "package_url": "http://10.247.63.61:8080/jboss-eap-6.3.0.zip",
+      "checksum": "7f4e6d63196edc3cf15240b693391b9c0be474cda2194ba7575be31881f1a3d5",
+      "version": "6.3",
+      "admin_user": "admin",
+      "admin_passwd": "123",
+      "start_on_boot": false
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[jboss-eap]"
+  ],
+  "env_run_lists": {
+  }
+}
