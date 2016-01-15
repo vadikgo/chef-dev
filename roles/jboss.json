@@ -5,11 +5,11 @@
   "default_attributes": {
     "jboss-eap": {
       "install_path": "/u01/opt",
-      "package_url": "http://10.247.63.61:8080/jboss-eap-6.4-CVE-2015-7501.zip",
+      "package_url": "http://10.211.55.2:8080/jboss-eap-6.4-CVE-2015-7501.zip",
       "checksum": "68d577883b3c3add77137af1b5a866b42519e6278523af8dc471b15f8ff2172f",
       "version": "6.4",
       "admin_user": "admin",
-      "admin_passwd": "123",
+      "admin_passwd": "admin_pass_123",
       "start_on_boot": false
     }
   },

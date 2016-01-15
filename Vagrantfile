@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
       v.customize ["set", :id, "--sh-app-guest-to-host", "off"]
       v.customize ["set", :id, "--shared-cloud", "off"]
       v.customize ["set", :id, "--shared-profile", "off"]
-      v.update_guest_tools = true
+      v.update_guest_tools = false
   end
   config.vm.provision "shell", inline: <<-SHELL
      sudo yum update -y

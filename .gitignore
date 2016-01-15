@@ -13,3 +13,4 @@ definitions/*/*.box
 .vagrant*
 repos/debian/*.gz
 *.swp
+nodes/vagrant*.json
