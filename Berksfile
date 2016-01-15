@@ -8,3 +8,4 @@ source "https://api.berkshelf.com"
 cookbook '7-zip'
 cookbook 'ark'
 cookbook 'apt'
+cookbook 'java'

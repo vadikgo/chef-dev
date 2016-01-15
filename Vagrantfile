@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "parallels/centos-6.6"
+  config.vm.box = "bento/centos-6.7"
 
   config.vm.provider "parallels" do |v|
       v.memory = 1024
@@ -20,7 +20,9 @@ Vagrant.configure(2) do |config|
     chef.install = true
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
     chef.roles_path = "roles"
+    chef.nodes_path = "nodes"
     chef.data_bags_path = "data_bags"
+    chef.add_role("java")
     chef.add_role("jboss")
     #chef.log_level = 'debug'
   end

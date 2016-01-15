@@ -1,0 +1,30 @@
+{
+  "name": "java",
+  "description": "Install Oracle Java",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "java": {
+      "install_flavor": "oracle",
+      "jdk_version": "7",
+      "oracle": {
+        "accept_oracle_download_terms": true
+      },
+      "jdk": {
+          "7": {
+              "x86_64": {
+                "url": "http://10.247.63.61:8080/jdk-7u80-linux-x64.tar.gz",
+                "checksum": "bad9a731639655118740bee119139c1ed019737ec802a630dd7ad7aab4309623"
+              }
+          }
+      }
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[java]"
+  ],
+  "env_run_lists": {
+  }
+}
