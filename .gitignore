@@ -1,1 +1,15 @@
-/cookbooks
+tmp
+pkg
+iso
+boxes
+cookbooks
+images
+Gemfile.lock
+.vagrant
+definitions/*/packer_cache
+definitions/*/output*
+definitions/*/*.box
+.bundle*
+.vagrant*
+repos/debian/*.gz
+*.swp
