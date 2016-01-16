@@ -13,9 +13,9 @@ Vagrant.configure(2) do |config|
       v.customize ["set", :id, "--shared-profile", "off"]
       v.update_guest_tools = false
   end
-  config.vm.provision "shell", inline: <<-SHELL
-     sudo yum update -y
-  SHELL
+  #config.vm.provision "shell", inline: <<-SHELL
+  #sudo yum update -y
+  #SHELL
   config.vm.provision "chef_zero" do |chef|
     chef.install = true
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
