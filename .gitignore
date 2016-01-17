@@ -14,3 +14,4 @@ definitions/*/*.box
 repos/debian/*.gz
 *.swp
 nodes/vagrant*.json
+.chef

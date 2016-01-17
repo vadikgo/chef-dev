@@ -4,8 +4,10 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "jboss-eap": {
-      "install_path": "/u01/opt",
-      "jboss_user": "jboss",
+      "install_path": "/u01/opt2",
+      "config_dir": "/u01/opt2/etc",
+      "log_dir": "/u01/opt2/log",
+      "jboss_user": "jboss2",
       "package_url": "http://10.211.55.2:8080/jboss-eap-6.4-CVE-2015-7501.zip",
       "checksum": "68d577883b3c3add77137af1b5a866b42519e6278523af8dc471b15f8ff2172f",
       "version": "6.4",

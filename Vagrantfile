@@ -25,5 +25,6 @@ Vagrant.configure(2) do |config|
     chef.add_role("java")
     chef.add_role("jboss")
     #chef.log_level = 'debug'
+    #chef.arguments = "-u jboss2"
   end
 end
