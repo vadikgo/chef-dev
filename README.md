@@ -1,9 +1,21 @@
 #### Quick start
 
+* install vagrant
+
+* install virtualbox
+
 * install chef-sdk
 
-* git clone https://github.com/vadikgo/chef-dev.git
+* `echo 'eval "$(chef shell-init bash)"' >> ~/.bash_profile`
 
-* rake
+* `. ~/.bash_profile`
 
-* vagrant up --provision
+* `git clone https://github.com/vadikgo/chef-dev.git`
+
+* `cd chef-dev`
+
+* `gem install berkshelf`
+
+* `rake`
+
+* `vagrant up --provision`
